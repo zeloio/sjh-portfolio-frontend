@@ -1,0 +1,372 @@
+{% set page_title = 'Sarah Dzida project' %}
+{% set body_class = 'bg-white' %}
+{% set navbar_fixed = true %}
+{% set navbar_dark = true %}
+{% set navbar_expand = true %}
+{% set navbar_mobile = 'style-2' %}
+{% set navbar_mobile_dark = false %}
+{% set footer = 'simple-default' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% macro z_image(src="") %}
+<div class="py-20 mw-100 position-relative">
+    <div class="w-100">
+        <img src="{{ src }}" class="w-100" alt="">
+    </div>
+</div>
+{% endmacro %}
+
+{% block content %}
+
+<!-- full image -->
+<div class="py-160 min-vh-100 d-flex align-items-center position-relative">
+    <div class="background">
+        <div class="background-image jarallax" data-jarallax data-speed="0.8">
+            <img src="./assets/images/S/S_cover.png" class="jarallax-img" alt="">
+        </div>
+        <div class="background-color" style="background-color: rgb(14, 14, 14, .2);"></div>
+    </div>
+
+    <div class="container text-center">
+        <!-- <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Creative Interior</h1> -->
+    </div>
+</div>
+
+<div style="max-width:860px; margin: 0 auto">
+    <!-- 40-60 text overview-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <!-- <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Titolo h3</h3> -->
+                    <h2 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Sarah<br>Dzida's<br>website</h2>
+                    <!-- <h1 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Titolo h1</h1> -->
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4>Transforming an Expert's Online Presence</h4>
+                    <p class="mb-20">I interned at Sarah Dzida Consulting, where I had an amazing experience working on various projects throughout the spring and spent 12 weeks on this keystone project.</p>
+
+                    <p class="mb-20">My role encompassed strategic planning, research, design, problem-solving, collaboration, and effective communication. 
+                        <br>Throughout the process, I collaborated closely with Sarah, seeking her feedback and incorporating her vision for the website. It involved multiple iterations, discussions, and fine-tuning to align the design with her specific needs and aspirations. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- grid text -->
+    <div class="container mt-20 mb-20">
+        <div class="row">
+            <div class="col-12 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+                <div class="row justify-content-around text-center">
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Role:</b></span>
+                        <br>
+                        <p class="mb-20">UX and Content strategist</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Duration:</b></span>
+                        <br>
+                        <p class="mb-20">12 Weeks</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Tools:</b></span>
+                        <br>
+                        <p class="mb-20">Figma</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Team:</b></span>
+                        <br>
+                        <p class="mb-20">Individual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- full image -->
+<!-- todo: CHANGE dimension -->
+{{ z_image('./assets/images/S/S_semipage.png') }}
+
+
+<div style="max-width:860px; margin: 0 auto">
+    <!-- 40-60 text - context -->
+    <!-- todo: change font -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Context</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Overview</b></h4>
+
+                    <p class="mb-20">As the intern working with Sarah Dzida, a product, UX, and content strategy consultant, was exhilarating.<br>However, it was evident that her website needed a makeover. Despite her expertise in user experiences, her site had grown dull and unfriendly due to her busy schedule and lack of updates. This irony became the catalyst for my project, with Sarah becoming my client. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text defining the problem --> 
+    <!-- todo: CHANGE FONT dimension, add rect -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Challenge</b><h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Transforming Sarah's Professionalism into Approachable Excellence</b></h4>
+                    <p class="mb-20">Our goal was clear: showcase Sarah's unique personality and professional expertise while maintaining a friendly and approachable tone. We aimed to boost website visibility and enhance user experience, aligning with her brand as a leading consultant.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text defining the problem --> 
+    <!-- todo: CHANGE FONT dimension, add rect -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Roadmap</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">Before diving into the website redesign, I recognized the importance of careful planning. Explore the comprehensive roadmap that guided our project, ensuring a smooth execution and keeping us focused and organized. This roadmap was more than just a plan; it was our communication lifeline, offering clarity and transparency at every project stage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image roadmap -->
+    {{ z_image('./assets/images/S/S_roadmap.png') }}
+
+    <!-- 40-60 text - design process -->
+
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Design<br>Process</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">The design process unfolds through the following stages:
+                    <ul>
+                        <li>Discover</li>
+                        <li>Define</li>
+                        <li>Develop</li>
+                        <li>Deliver</li>
+                </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 audit-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Discover</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Audit</br></b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">Gain insights into how I meticulously audited Sarah Dzida's existing website content. Discover the strengths and weaknesses, and learn how I identified areas for improvement, assessed alignment with Sarah's brand, and addressed outdated or redundant content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 competitor-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Discover</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Competitor<br>Research</br></b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">I analyzed competitors' websites to uncover trends, design patterns, and best practices. Understand how this research-driven approach informed not only design decisions but also user-centric content creation.</p>
+
+                    <p class="mb-20">This research-driven approach not only informed the design decisions but also contributed to crafting compelling and user-centric content for the website.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image - competitor -->
+    {{ z_image('./assets/images/S/S_discover.png') }}
+    
+    <!-- 40-60 research-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Empahtize</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>User<br>Research</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Stakeholder interview</b></h4>
+
+                    <p class="mb-20">Interviewing Sarah, the key stakeholders, deepened my understanding of the project's context and objectives. Sarah's vision, target audience, and desired services shaped my strategy.</p>
+                    
+                    <p class="mb-20">By incorporating the insights gathered from the interview, along with the findings from the content audit and competitor analysis, I created a comprehensive and well-informed strategy for the website redesign.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 strategy-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Define</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Strategy<br>Plan</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Starting to generate ideas and create concepts</b></h4>
+
+                    <p class="mb-20">Based on insights from the interview, we defined a friendly yet professional branding tone, aligning with Sarah's personality. This tone set the stage for a static website, ensuring a cohesive message and design. Removing the "Consulting 1:1" page allowed for efficient schedule management while highlighting her consulting services on the homepage.</p>
+                
+                    <h4><b>The CMS Dilemma</b></h4>
+                    
+                    <p class="mb-20">As hiring a developer for the website development was not within the scope of the project, I explored alternative solutions to ensure an efficient and cost-effective approach. After careful consideration, I proposed different CMS options to Sarah, presenting a thorough comparison of their prices and benefits. I emphasized the long-term investment value each CMS offered, particularly in terms of future content expansion and ease of management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 sitemap, IA-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Develop</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Sitemap<br>and IA</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>2 options</b></h4>
+
+                    <p class="mb-20">As Sarah remained undecided about the best CMS fit, I took the initiative to address the development constraints and cater to her needs.</p> 
+
+                    <p class="mb-20">I presented two sitemap options, each reflecting Sarah's professional persona. These structures streamlined content organization, ensuring easy navigation and access. <br> By providing these two sitemap proposals, I aimed to offer flexibility and options that aligned with her preferences and project constraints.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image - sitemap -->
+    {{ z_image('./assets/images/S/S_sitemap.png') }}
+
+    <!-- 40-60 wireframes-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Deliver</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Wireframes</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>The Decision</b></h4>
+                    
+                    <p class="mb-20">To illustrate potential layout variations, I created both low-fidelity (lo-fi) and high-fidelity (hi-fi) wireframe options.</p>
+                    <p class="mb-20">At the end, Sarah opted for a one-page website and retained her CMS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- full image - wireframes -->
+    {{ z_image('./assets/images/S/S_wireframe.png') }}
+
+    <!-- 40-60 KPIs-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Deliver</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>KPIs</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    
+                    <p class="mb-20">Since Sarah opted for a one-page website, she posed the challenge for integrating additional functionalities like analytics or traffic visualization tools </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 takeaways-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Takeaways</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Things I would have done if I had more time</b></h4>
+                    
+                    <p class="mb-20">While redesigning the website, we seized an opportunity to create a landing page for Sarah's mentorship program. This highlighted the flexibility of a one-page website. We identified areas for further improvement, including localization features, marketing tools, and comprehensive documentation.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- 40-60 text - Reflection -->
+     <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <!-- <h4 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Takeaways</b></h4> -->
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Reflection</b></h4>
+                    
+                    <p class="mb-20">Despite the challenges, the journey was rewarding as it provided me with a glimpse into the professional world of consulting and UX design. Sarah's trusted in my abilities encouraged me to push my boundaries, and the successful completion of the project left me with a sense of accomplishment and readiness to tackle future consulting endeavors with even more confidence.</p>
+
+                    <p class="mb-20">Throughout the website redesign project, I gained valuable takeaways through comprehensive research and collaboration. Being flexible and adapting to a one-page format, considering budget constraints, and paying close attention to content and branding resulted in a polished online presence. Real-world client experience provided insights into managing expectations and incorporating feedback.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-navigation mt-160 px-5">
+        <a href="turn-zero-game-detail.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
+        <a href="gallery.html" class="btn btn-light btn-circle btn-xs">all</a>
+        <a href="jaunt-app-detail.html" class="btn btn-clean">next<span class="d-none d-sm-inline"> project</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+    </div>
+</div>
+
+{% endblock %}

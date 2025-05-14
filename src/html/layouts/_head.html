@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{{ headerComment | safe }}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Sara's Portfolio{% if page_title %}{{ ' | ' + page_title }}{% elif header_title %}{{ ' | ' + header_title }}{% endif %}</title>
+
+    <meta name="description" content="Sara's Portfolio">
+    <meta name="author" content="Sara Jialin Hu">
+
+    <meta property="og:site_name" content="Sara's Portfolio">
+    <meta property="og:title" content="Sara's Portfolio" />
+    <meta property="og:description" content="Sara's Portfolio" />
+    <meta property="og:image" itemprop="image" content="https://sarajialinhu.com/assets/images/favicon.png">
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- START: Styles -->
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="assets/vendor/swiper/dist/css/swiper.min.css" />
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="assets/vendor/fancybox/dist/jquery.fancybox.min.css" />
+
+    <!-- Themebau -->
+    <link rel="stylesheet" href="assets/css/{{ template_name }}.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    {% if custom_css %}<link rel="stylesheet" href="{{ custom_css }}">{% endif %}
+    <!-- END: Styles -->
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    {% block head %}{% endblock %}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L14985M64F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-L14985M64F');
+    </script>
+    
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.431/build/spline-viewer.js"></script>
+</head>

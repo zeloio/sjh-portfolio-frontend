@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  worker:
+    build: .
+    init: true
+    networks:
+      zennet:
+  nginx:
+    build: load-balancer
+    volumes:
+      - lb-data:/etc/nginx/
+    container_name: app-sjh-portfolio-lb
+    ports:
+      - 8031:8000
+    networks:
+      zennet:
+    depends_on:
+      - worker
+volumes:
+  lb-data:
+    name: "sjh-portfolio-lb-volume"
+networks:
+  zennet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.91.0/24
+          gateway: 192.168.91.1

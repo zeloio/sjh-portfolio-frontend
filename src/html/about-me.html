@@ -1,0 +1,73 @@
+{% set page_title = 'Sara Jialin Hu' %}
+{% set navbar_mobile = 'style-2' %}
+{% set navbar_fixed = true %}
+{% set navbar_expand = true %}
+{% set footer = false %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% block content %}
+
+<div class="container pt-130 pb-130 mt-n10">
+    <div class="row gh-1 gv-1 align-items-center align-items-lg-stretch flex-column flex-lg-row">
+        <div class="col-12 col-md-6 col-lg-5 shape-parent lines-style-5 order-1 show-on-scroll" data-show-duration="600" data-show-distance="10" data-show-delay="100">
+            <img class="w-100 rounded-circle" src="assets/images/persons/me.jpg" alt="">
+            <div class="shape justify-content-end">
+                <svg class="mt-n60" width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="62.5" cy="62.5" r="62.5" fill="#F5F5F5"/>
+                </svg>
+            </div>
+            <div class="line"></div>
+        </div>
+
+        <div class="col-lg-1 d-none d-lg-block order-2 order-lg-2"></div>
+
+        <div class="col-12 col-lg ms-lg-n30 order-4 order-lg-3 show-on-scroll" data-show-duration="600" data-show-distance="10">
+            <p class="subtitle pt-30 mt-n7">Sara Jialin Hu</p>
+            <h1 class="h2">Hi! I'm Sara, UX/UI Designer.</h1>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills nav-tabs nav-no-gap pt-5 pb-7 mb-30" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span class="nav-link-name">short bio</span></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><span class="nav-link-name">long bio</span></a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <p class="mb-30">I am a recent graduate of the Dual Degree MSc Global Media and Communications program at the London School of Economics and University of Southern California, with a background in business and languages.</p>
+                    <p class="mb-30">Through my academic and professional journey, I've honed the ability to deeply connect with diverse user contexts and design intuitive interfaces that enhance digital interactions.</p>
+                    <p class="mb-0">I am a fast learner and am always up for a challenge. If your team is working on developing user-centered products or experiences, I would love to hear about it!</p>
+                </div>
+                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <p class="mb-30">I am a recent graduate of the Dual Degree MSc Global Media and Communications program at the London School of Economics and University of Southern California, with a background in business and languages.</p>
+                    <p class="mb-30">Through my academic and professional journey, I've honed the ability to deeply connect with diverse user contexts and design intuitive interfaces that enhance digital interactions.</p>
+                    <p class="mb-30">I am a fast learner and am always up for a challenge. If your team is working on developing user-centered products or experiences, I would love to hear about it!</p>
+                    <p class="mb-0">When I'm not designing, I'm always seeking new adventures and adrenaline rushes. Exploring different cultures, falling in love with new places, and embracing diverse traditions broaden my perspective and inspire my creativity. Food is another passion of mine, always accompanied by a fine glass of wine.</p>
+                </div>
+            </div>
+            
+            <a href="assets/images/sara-jh-cv.pdf" target="_blank" class="btn btn-dark btn-with-ball mt-60">My resume</a>
+            <p class="mt-20">Feel free to contact me at:<br><a href="mailto:sarajialin.hu@gmail.com?subject=Hi%20Sara!" class="text-decoration-none">sarajialin.hu@gmail.com</a></p>
+        </div>
+
+        <div class="col-auto col-lg-1 order-3 order-lg-4">
+            <div class="sticky-top d-flex justify-content-lg-end pt-30">
+                <ul class="nav nav-gap-sm d-inline-flex align-items-center flex-lg-column">
+                    <li class="nav-item show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="200">
+                        <a href="https://www.linkedin.com/in/jialin-sara-hu-3645b9173/" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

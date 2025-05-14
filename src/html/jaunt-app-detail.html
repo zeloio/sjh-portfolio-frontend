@@ -1,0 +1,318 @@
+{% set page_title = 'Jaunt project' %}
+{% set body_class = 'bg-white' %}
+{% set navbar_fixed = true %}
+{% set navbar_dark = true %}
+{% set navbar_expand = true %}
+{% set navbar_mobile = 'style-2' %}
+{% set navbar_mobile_dark = false %}
+{% set footer = 'simple-default' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% macro z_image(src="") %}
+<div class="py-20 mw-100 position-relative">
+    <div class="w-100">
+        <img src="{{ src }}" class="w-100" alt="">
+    </div>
+</div>
+{% endmacro %}
+
+{% block content %}
+
+<!-- full image – v3 -->
+<div class="py-160 min-vh-100 d-flex align-items-center position-relative">
+    <div class="background">
+        <div class="background-image jarallax" data-jarallax data-speed="0.8">
+            <img src="./assets/images/J/J_cover.png" class="jarallax-img" alt="">
+        </div>
+        <div class="background-color" style="background-color: rgb(14, 14, 14, .2);"></div>
+    </div>
+
+    <div class="container text-center">
+        <!-- <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Creative Interior</h1> -->
+    </div>
+</div>
+
+<div style="max-width:800px; margin: 0 auto">
+    <!-- 40-60 text -->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <!-- <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Titolo h3</h3> -->
+                    <h2 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Jaunt</h2>
+                    <!-- <h1 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Titolo h1</h1> -->
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Reimagining Travel Through Architecture </b></h4>
+                    <p class="mb-20">Jaunt, the innovative app I crafted, serves as the bridge between architecture enthusiasts and unparalleled vacation accommodations. It's more than just a platform; it's an invitation to discover, book, and immerse yourself in extraordinary architectural designs across the globe.</p>
+                    <p class="mb-20">As the creator of Jaunt, I donned the roles of both a UX researcher and UI designer. My mission: to revolutionize how architecture enthusiasts plan their journeys.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- grid text -->
+    <div class="container">
+        <div class="row gv-3">
+            <div class="col-12 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+                <div class="row justify-content-around text-center">
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Role:</b></span>
+                        <br>
+                        <p class="mb-20">UX researcher, UI design</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Duration:</b></span>
+                        <br>
+                        <p class="mb-20">1 Week</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Tools:</b></span>
+                        <br>
+                        <p class="mb-20">Figma</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Team:</b></span>
+                        <br>
+                        <p class="mb-20">Individual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- full image wireframe -->
+{{ z_image('./assets/images/J/J_semi.png') }}
+
+<div style="max-width:860px; margin: 0 auto">
+    <!-- 40-60 text - context -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Context</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Overview</b></h4>
+
+
+                    <p class="mb-20">In the crucible of USC's Design for User Experience course, Jaunt was born. This user-centric UX/UI design project culminated in the creation of a mobile app that unites architecture and design enthusiast with extraordinary global vacation experiences. Jaunt goes beyond offering just accommodations; it's an avenue for education and inspiration, introducing users to the world of remarkable architectural designs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text defining the problem --> 
+    <!-- todo: CHANGE FONT dimension, add rect -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Project<br>Brief</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">The project requirement was to create an accommodation app with the inclusion of specific features like overlays and horizontal scrolling.</p>
+                    <p class="mb-20">Lot of the time, traditional hotels or staying offer standardized rooms, devoid of individuality and the memorable touch travelers crave and architecture enthusiasts lack resources to explore captivating designs during their journeys.</p>
+                    <h4>How can we provide users with unique, educational, and private accommodations that go beyond traditional options?</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text -design process --> 
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Design<br>Process</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>User Research</b></h4>
+
+                    <p class="mb-20">To gain profound insights into user preferences and pain points, I embarked on a series of online interviews. These conversations delved into the minds of travelers, from those who stayed in traditional hotels to those hesitant to book trips. It became apparent that users yearned for accommodations with unique designs.</p>               
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text - solution --> 
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Solution</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Designing for Wonder</b></h4>
+                    <p class="mb-20">The design solutions addressed the identified pain points and aimed to create a comprehensive app experience for architecture enthusiasts seeking unique accommodations and architectural exploration.</p>
+
+                    <p class="mb-20">I envisioned a minimalist, visually engaging interface, drawing inspiration from a meticulously curated mood board. It aimed to awaken a sense of inspiration and wonder in users.</p>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image - moodboard -->
+    {{ z_image('./assets/images/J/J_moodboard.png') }}
+
+    <!-- 50-50 filters -->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container">
+        <div class="row gv-3 align-items-center mb-20 mb-lg-0">
+            <div class="col-12 col-lg ms-xl-5 me-xl-n10 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="right" data-show-delay="50">
+                <h5 class="mb-0" style="color:gray">Design</h5>
+                <h4><b>Tailoring the Search</b></h4>
+
+
+                <p class="mb-20">I created two distinct search and filtering mechanisms, catering to different user needs. </p>
+                
+                <p class="mb-20">The first simplifies accommodation selection, saving users time by helping them narrow down options based on architectural styles, locations, and more. </p>
+                
+            </div>
+
+            <div class="d-none d-lg-block col-1 me-xl-10"></div>
+            
+            <div class="col-12 col-lg-6 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="left" data-show-delay="250">
+                <div class="gallery-item gallery-item-lg" data-animation-effect="fade">
+                    <img src="./assets/images/J/J_filter.png" class="jarallax-img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 50-50 second filter -->
+    <div class="container">
+        <div class="row gv-3 align-items-center mb-20 mb-lg-0">
+            <div class="col-12 col-lg-6 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="left" data-show-delay="250">
+                <div class="gallery-item gallery-item-lg" data-animation-effect="fade">
+                    <img src="./assets/images/J/J_filter_p2.png" class="jarallax-img" alt="">
+                </div>
+            </div>
+
+            <div class="d-none d-lg-block col-1 me-xl-10"></div>
+
+            <div class="col-12 col-lg ms-xl-5 me-xl-n10 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="right" data-show-delay="50">
+                <!-- <h4 class="mb-0" style="color:gray">Design</h4> -->
+
+                <p class="mb-20">The second mechanism allows users to explore accommodations alphabetically, focusing on architectural style, influences, and landscapes.</p>
+
+                <p class="mb-20">It's a valuable tool for those seeking specific architects or a deeper architectural connection.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 50-50 wishlist -->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container">
+        <div class="row gv-3 align-items-center mb-20 mb-lg-0">
+            <div class="col-12 col-lg ms-xl-5 me-xl-n10 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="right" data-show-delay="50">
+                <h5 class="mb-0" style="color:gray">Design</h5>
+                <h4><b>Personalized Wishlist</b></h4>
+
+                <p class="mb-20">I introduced two types of wishlists - one for favorite architects and another for specific house architectures. These features empower users to curate their preferences effectively, revisiting and organizing their architectural inspirations.</p>            
+            </div>
+
+            <div class="d-none d-lg-block col-1 me-xl-10"></div>
+            
+            <div class="col-12 col-lg-6 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="left" data-show-delay="250">
+                <div class="gallery-item gallery-item-lg" data-animation-effect="fade">
+                    <img src="./assets/images/J/J_like.png" class="jarallax-img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 50-50 arc -->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container">
+        <div class="row gv-3 align-items-center mb-20 mb-lg-0">
+            <div class="col-12 col-lg-6 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="left" data-show-delay="250">
+                <div class="gallery-item gallery-item-lg" data-animation-effect="fade">
+                    <img src="./assets/images/J/J_arch.png" class="jarallax-img" alt="">
+                </div>
+            </div>
+
+            <div class="d-none d-lg-block col-1 me-xl-10"></div>
+
+            <div class="col-12 col-lg ms-xl-5 me-xl-n10 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="right" data-show-delay="50">
+                <h5 class="mb-0" style="color:gray">Design</h5>
+                <h4><b>Educational Integration</b></h4>
+
+                <p class="mb-20">My goal was to make Jaunt not just a booking platform but also an educational resource. </p>
+
+                <p class="mb-20">Each accommodation listing included architectural insights, historical context, and a dedicated architect biography page. This added educational value for users interested in the finer details of architecture.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text - prototype -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Prototype</b></div</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- full image - prototype -->
+<div style="height: 450px;">
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQ1ROqdtoP7NNxGflA7ZANH%2FA13-Accomodation-App%3Fpage-id%3D480%253A1308%26type%3Ddesign%26node-id%3D480-2246%26viewport%3D-710%252C409%252C0.19%26t%3DTI5DD6mtDyV3jf9D-1%26scaling%3Dscale-down%26starting-point-node-id%3D480%253A2246%26mode%3Ddesign" allowfullscreen></iframe>
+</div>
+
+<div style="max-width:860px; margin: 0 auto">
+    <!-- 40-60 text - takeaways -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Takeaways</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">This project was a valuable learning experience that underscored the importance of addressing user pain points, incorporating educational aspects, and iterating designs based on user feedback. Through the development of Jaunt, I honed my UX research and UI design skills, gaining insights that will undoubtedly shape my future design endeavors.</p>            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text - Reflection -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <!-- <h4 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Takeaways</b></h4> -->
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Reflection</b></h4>
+                    
+                    <p class="mb-20">The Jaunt project proved to be both challenging and enjoyable. Creating something from scratch required careful time management and balancing of expectations. While initially aiming to surpass all other apps, I had to remind myself of the project's main criteria and manage the limited time. Throughout the project, I learned the importance of managing time and expectations.</p>            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-navigation mt-160">
+        <a href="sara-dzida-detail.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
+        <a href="gallery.html" class="btn btn-light btn-circle btn-xs">all</a>
+        <a href="zee-um-detail.html" class="btn btn-clean">next<span class="d-none d-sm-inline"> project</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,480 @@
+{% set page_title = 'Zee Um project' %}
+{% set body_class = 'bg-white' %}
+{% set navbar_fixed = true %}
+{% set navbar_dark = true %}
+{% set navbar_expand = true %}
+{% set navbar_mobile = 'style-2' %}
+{% set navbar_mobile_dark = false %}
+{% set footer = 'simple-default' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% macro z_image(src="") %}
+<div class="py-20 mw-100 position-relative">
+    <div class="w-100">
+        <img src="{{ src }}" class="w-100" alt="">
+    </div>
+</div>
+{% endmacro %}
+
+{% macro image_portfolio(src="", classes="", gallery="") %}
+<a href="{{ src[1] }}" class="gallery-item{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade">
+    <img src="{{ src[0] }}" alt="">
+</a>
+{% endmacro %}
+
+{% macro image_portfolio_init(name="", classes="", gallery="") %}
+    {{ image_portfolio(single_portfolio_images.style_1[name], classes=classes, gallery=gallery) }}
+{% endmacro %}
+
+{% block content %}
+
+<!-- full image cover -->
+<div class="py-160 min-vh-100 d-flex align-items-center position-relative">
+    <div class="background">
+        <div class="background-image jarallax" data-jarallax data-speed="0.8">
+            <img src="./assets/images/Z_cover1.png" class="jarallax-img" alt="">
+        </div>
+        <div class="background-color" style="background-color: rgb(14, 14, 14, .2);"></div>
+    </div>
+
+    <div class="container text-center">
+        <!-- <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Creative Interior</h1> -->
+    </div>
+</div>
+
+<div style="max-width:860px; margin: 0 auto">
+    <!-- 40-60 text -->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <!-- <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Titolo h3</h3> -->
+                    <h2 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Zee Um</h2>
+                    <!-- <h1 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Titolo h1</h1> -->
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>The AR Revolution - Experience Art Beyond the Canvas</b></h4>
+                    <p class="mb-20">Zee Um is a revolutionary Augmented Reality (AR) experience designed to break geographic and economic barriers, providing users with the opportunity to explore curated art galleries in a life-size setting. It redefines art appreciation by offering audio guides from renowned art historians.<br>We called this concept "<b>Art for All</b>".</p>
+                    <p class="mb-20">Throughout this project, I embraced a multidisciplinary role, employing Figma, Photoshop, and Qualtrics to shape Zee Um's trajectory. My contributions spanned various aspects, including conceptualization, visual design, usability testing, and communication with team members.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- grid text -->
+    <div class="container">
+        <div class="row gv-3">
+            <div class="col-12 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+                <div class="row justify-content-around text-center">
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Role:</b></span>
+                        <br>
+                        <p class="mb-20">Product Designer</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Duration:</b></span>
+                        <br>
+                        <p class="mb-20">12 Weeks</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Tools:</b></span>
+                        <br>
+                        <p class="mb-20">Figma<br>Photoshop<br>Qualtrics</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Team:</b></span>
+                        <br>
+                        <p class="mb-20">Braford Barrett<br>Adreanne Nikki Bertumen<br>James Koch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- full image occhiali -->
+<div class="py-20 mw-100 position-relative">
+    <div class="w-100">
+        <video class="w-100" style="height:auto" autoplay loop>
+            <source src="./assets/images/Z/Z_semi.mov">
+        </video>
+    </div>
+</div>
+
+<div style="max-width:860px; margin: 0 auto">
+    <!-- 40-60 text - context -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Context</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Overview</b></h4>
+
+                    <p class="mb-20">Zee Um was conceived as part of the final project for USC's 'Design for User Experience' course. We embarked on this mission because art is more than mere visuals; it's a reflection of culture, and we believed in making it accessible to all.</p>
+                                    
+                    <p class="mb-20">By applying augmented reality, Zee Um aims to offer an unparalleled art viewing experience. We want to provide access to the world's most celebrated art without the limitations of physical location or financial constraints.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text defining the problem -->
+    <!-- todo: CHANGE FONT dimension, add rect -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Defining<br>the problem</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Challenge</b></h4>
+
+                    <p class="mb-20">Our core challenge was to create an AR experience that could rival physical museum visits, offering an immersive and educational journey. Currently, many people are unable to visit prestigious museums like the Met, Louvre, or Smithsonian due to various limitations.</p>
+
+                    <h4>How can we provide a high-quality, immersive experience that rivals physical museum visits and offers educational value?</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text - team alignment -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Team<br>Alignment</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">To initiate a successful team project, we began by outlining key aspects that require team consensus and fostering a deeper understanding of one another.</p>
+
+                    <p class="mb-20">For this purpose, we utilized the Team Canvas. To ensure team cohesion, we employed a variety of tactics, from creating a dedicated Slack channel for seamless communication to weekly meetings and collaborative task tracking on Google Sheets."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image - tabella cuore -->
+    {{ z_image('./assets/images/Z/Z_team.png') }}
+
+    <!-- 40-60 text - competitor -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Competitor<br>Analysis</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">We analyzed existing art viewing platforms and solutions to understand the competitive landscape.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image - tabella competitor -->
+    {{ z_image('./assets/images/Z/Z_compe.png') }}
+
+    <!-- 40-60 text - user persona -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Users Persona<br>and Scenarios</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">We created provisional user personas based on target audience characteristics, capturing specific user pain points, motivations, goals and expectations and developed scenarios for each personas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- swiper -->
+<!-- todo: REDO imm -->
+<div class="py-20 shape-parent overflow-hidden">
+    <div class="swiper swiper-full-horizontal my-20 mb-n6" data-swiper-slides="auto" data-swiper-gap="30" data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {% macro slide_project(name="") %}
+                <div class="swiper-slide">
+                    {{ image_portfolio_init(name, 'gallery-item-md') }}
+                </div>
+                {% endmacro %}
+                {{ slide_project('01') }}
+                {{ slide_project('02') }}
+                {{ slide_project('03') }}
+
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<div style="max-width:860px; margin: 0 auto">
+    <!-- 40-60 text - storyboard -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Storyboard</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">Then we developed a storyboard to visualize the user experience and demonstrate the features of Zee UM.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image - immagine storyboad -->
+    {{ z_image('./assets/images/Z/Z_story.png') }}
+
+    <!-- 40-60 text - user research -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>User<br>Research</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">A research survey project was undertaken to put Zee Um in front of potential customers and test their receptiveness to our value proposition. The materials offered to survey respondents Visual Value Proposition, questions and wireframe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text - user research -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <!-- <h4 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>User Research</b></h4> -->
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Insights</b></h4>
+
+                    <p class="mb-20">Among 70 respondents, over 80-90% understood the concept, with many connecting augmented reality and the art world. However, there was room for improvement in perceived value and concerns about logistics.</p>
+                    <p class="mb-20">People really liked the idea to have different preferences and like to have a variety of options to choose from.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text - iteration -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Iteration</b></h3> 
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>The Entertainment Gambit</b></h4>
+
+                    <p class="mb-20">After user research, we iterated on our product design based on user feedback. We addressed issues related to second screens and user hesitation regarding travel. We pivoted to create an entertaining aspect, expanding the concept to 'Art for All' and 'Party for All' experiences.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 40-60 text - day n night -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-6 col-lg-6 me-lg-auto show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h4 class="text-center"><b>Day time: Art for All</b></h4>
+                    
+                    <ul>
+                        <li>Art literacy for students. Inspiration for people. Family fun.</li>
+                        <li>Experiences by Art movement, by heritage, by artist, by style,  experience something curated, or stroll through the Louvre.</li>
+                        <li>Largely funded by local government art funds and the businesses trying to market this hardware.</li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-6 ms-xl-auto show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4 class="text-center"><b>Night time: Party for All</b></h4>
+                    
+                    <ul>
+                        <li>An upscale club experience. Cocktails, DJ, and AR glasses.</li>
+                        <li>The Avant-garde. Moving art. Interactive experiences that only AR can provide.</li>
+                        <li>B2C. Entertainment venue shaped business model: Cover charges. Drink profit margins. Events.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text - design system -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Design<br>System</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="lead mb-0">We established a consistent visual and interaction design language through a comprehensive design system.<br>This included defining typography, logo usage, tokens and icons, and copy guidelines.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image - immagine storyboad -->
+    {{ z_image('./assets/images/Z/Z_system.png') }}
+
+
+    <!-- 50-50 blind spot -->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container">
+        <div class="row gv-3 align-items-center mb-20 mb-lg-0">
+            <div class="col-12 col-lg ms-xl-5 me-xl-n10 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="right" data-show-delay="50">
+                <h5 class="mb-0" style="color:gray">Design</h5>
+                <h4><b>Hardware Design choices</b></h4>
+
+                <p class="mb-20">We carefully selected hardware, considering factors like AR capabilities, weight, and compatibility with various users. The Qualcomm 6 family of products met our needs with AR processing, cameras, audio overlay, and Wi-Fi connectivity.</p>
+            </div>
+
+            <div class="d-none d-lg-block col-1 me-xl-10"></div>
+            
+            <div class="col-12 col-lg-6 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="left" data-show-delay="250">
+                <div class="gallery-item gallery-item-lg" data-animation-effect="fade">
+                    <img src="./assets/images/Z/Z_glass.png" class="jarallax-img" style="object-fit: contain;" alt=""> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 50-50 blind spot -->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container">
+        <div class="row gv-3 align-items-center mb-20 mb-lg-0">
+
+            <div class="col-12 col-lg-6 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="left" data-show-delay="250">
+                <div class="gallery-item gallery-item-lg" data-animation-effect="fade">
+                    <img src="./assets/images/Z/Z_blindspot.png" class="jarallax-img" style="object-fit: contain;" alt=""> 
+                </div>
+            </div>
+
+            <div class="d-none d-lg-block col-1 me-xl-10"></div>
+            
+            <div class="col-12 col-lg ms-xl-5 me-xl-n10 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="right" data-show-delay="50">
+                <h5 class="mb-0" style="color:gray">Design</h5>
+                <h4><b>The Blind Spot</b></h4>
+
+                <p class="mb-20">To address the challenge of displaying art and controls in AR glasses, we strategically placed icons in the human blind spot, ensuring users could focus on the art.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- 50-50 figma prototype -->
+    <!-- todo figma prototype -->
+    <div class="container pb-20">
+        <div class="row gv-3 align-items-center mb-20 mb-lg-0">
+           
+            <div class="col-12 col-lg ms-xl-5 me-xl-n10 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="right" data-show-delay="50">
+                <!-- <h4 class="mb-0" style="color:gray">Design</h4> -->
+                <h5 class="mb-0" style="color:gray">Prototype</h5>
+                <h4><b>Buying & Check-in</b></h4>
+
+                <p class="mb-20">We improved the ticket purchase and check-in process by developing an iPad integration prototype, aiming to enhance the efficiency of the attendee experience.</p>
+            </div>
+
+            <div class="d-none d-lg-block col-1 me-xl-10"></div>
+
+            <div class="col-12 col-lg-6 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="left" data-show-delay="250">
+                <div class="gallery-item gallery-item-lg" data-animation-effect="fade">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F5rA3ZZAGeCjVeOJm4soAI6%2FZee-Um-Working-Board%3Fpage-id%3D912%253A5124%26type%3Ddesign%26node-id%3D912-5824%26viewport%3D607%252C415%252C0.08%26t%3DERqpATXZgCy5YOS4-1%26scaling%3Dscale-down%26starting-point-node-id%3D912%253A5824%26mode%3Ddesign " allowfullscreen></iframe>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- 40-60 text - usability -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Usability<br>test</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>System Usability Scale</b></h4>
+                    
+                    <p class="mb-20">To validate our design's effectiveness, we conducted a usability test using the System Usability Scale (SUS). Results indicated a positive reception among our classmates.The results of the usability test are as follows:</p>
+
+                    <ul>
+                        <li>Odd: 106</li>
+                        <li>Even: 122</li>
+                        <li>Total: 228</li>
+                        <li>Average Total Score: 32.57</li>
+                        <li>System Usability Scale (SUS) Score: 81.43</li>
+                    </ul>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text - takeaways -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Takeaways</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Things we would have done if I had more time</b></h4>
+                    
+                    <p class="mb-20">Further exploration and optimization of the user journey, especially for complex interactions like controls in the AR glasses, could have enhanced the overall user experience.</p>
+                    <p class="mb-20">Our guerrilla user testing was insightful, but conducting testing with a more diverse group of participants could have provided a more comprehensive perspective. <br>We also could have delved deeper into ethical considerations related to privacy, data security, and potential impact on physical museum visits. These considerations would have influenced our design choices.</p>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text - final toughts -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <!-- <h4 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Takeaways</b></h4> -->
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Final thoughts</b></h4>
+                    
+                    <p class="mb-20">Working on the Zee Um project was an incredible learning experience that allowed us to apply design principles in a real-world context. The project highlighted the power of technology to bridge gaps and make art accessible to everyone, regardless of their geographic location or economic background.</p>
+                    <p class="mb-20">As designer, I learned valuable lessons about effective communication, collaboration, and meeting deadlines. Working as a team allowed us to leverage each other's strengths and produce high-quality work. As a team, we agreed on gain practical experience in analyzing user needs, designing user-centric solutions, and evaluating the effectiveness of their designs. In particular, The user research and testing phases provided crucial insights, helping us refine and improve the Zee UM project.</p>
+                    <p class="mb-20">We are proud of the final result achieved, and we have even considered further developing the project to pitch it to incubators. The dream of Zee UM is to connect the world to its artistic heritage, making art accessible and enjoyable for all, no matter where they are.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-navigation mt-160">
+        <a href="jaunt-app-detail.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
+        <a href="gallery.html" class="btn btn-light btn-circle btn-xs">all</a>
+        <a href="sara-dzida-detail.html" class="btn btn-clean">next<span class="d-none d-sm-inline"> project</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+    </div>
+</div>
+
+
+{% endblock %}

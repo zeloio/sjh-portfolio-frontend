@@ -1,0 +1,504 @@
+{% set page_title = 'Re:turn Zero Games project' %}
+{% set body_class = 'bg-white' %}
+{% set navbar_fixed = true %}
+{% set navbar_dark = true %}
+{% set navbar_expand = true %}
+{% set navbar_mobile = 'style-2' %}
+{% set navbar_mobile_dark = false %}
+{% set footer = 'simple-default' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% macro z_image(src="") %}
+<div class="py-20 mw-100 position-relative">
+    <div class="w-100">
+        <img src="{{ src }}" class="w-100" alt="">
+    </div>
+</div>
+{% endmacro %}
+
+{% block content %}
+
+<!-- full image -->
+<!-- REDO -->
+<div class="py-160 min-vh-100 d-flex align-items-center position-relative">
+    <div class="background">
+        <div class="background-image jarallax" data-jarallax data-speed="0.8">
+            <img src="./assets/images/R/R_cover.png" class="jarallax-img" alt="">
+        </div>
+        <div class="background-color" style="background-color: rgb(14, 14, 14, .2);"></div>
+    </div>
+
+    <div class="container text-center">
+        <!-- <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Creative Interior</h1> -->
+    </div>
+</div>
+
+<div style="max-width:860px; margin: 0 auto">
+    <!-- 40-60 text overview-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <!-- <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Titolo h3</h3> -->
+                    <h2 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Re:turn<br>Zero<br>Game</h2>
+                    <!-- <h1 class="mb-20 mb-lg-0 pb-8 pb-lg-0">Titolo h1</h1> -->
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>The Ultimate Gaming Haven</b></h4>
+                    <p class="mb-20">Re:Turn Zero Games is a blog that aims to establish a unique identity, gain a competitive edge, and offer valuable insights about Turn Zero Game, a local Los Angeles-based small business.</p> 
+
+                    <p class="mb-20">In this project, I provided comprehensive UX/UI and content strategy, crafted a distinct branding approach, and designed the blog layout. Additionally, I devised a future plan to ensure the continuous evolution and success of the strategy moving forward.</p>            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- grid text -->
+    <div class="container">
+        <div class="row gv-3">
+            <div class="col-12 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+                <div class="row justify-content-around text-center">
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Role:</b></span>
+                        <br>
+                        <p class="mb-20">Product designer, UX</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Duration:</b></span>
+                        <br>
+                        <p class="mb-20">12 Weeks</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Tools:</b></span>
+                        <br>
+                        <p class="mb-20">Figma</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 col-xl-3">
+                        <span class="fw-medium"><b>Team:</b></span>
+                        <br>
+                        <p class="mb-20">Individual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- full image wireframe -->
+{{ z_image('./assets/images/R/R_semi.png') }}
+
+<div style="max-width:860px; margin: 0 auto">
+    <!-- 40-60 text - context -->
+    <!-- todo: change font -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Context</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Overview</b></h4>
+
+
+                    <p class="mb-20">Turn Zero Game, a hidden gem in LA K-Town, thrives in the world of trading card games and board games. Beyond a store, it's a thriving in-person gaming hub, hosting weekly events, and nurturing a competitive yet welcoming atmosphere.</p> 
+
+                    <p class="mb-20">However, their digital presence needed a spark to match their offline success.</p>
+                    <p class="mb-20">The design process unfolds through the following stages:</p>
+
+                    <ul>
+                        <li>Discover</li>
+                        <li>Define</li>
+                        <li>Develop</li>
+                        <li>Deliver</li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text defining the problem --> 
+    <!-- todo: CHANGE FONT dimension, add rect -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Challenge</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">My mission thus was to equip Turn Zero Games to boost online engagement and amplify brand loyalty</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 40-60 audit-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Discover</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Audit</br></b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Uncovering the Digital Landscape</b></h4>
+                    <p class="mb-20">I began by meticulously examining Turn Zero Games' existing website. My goal? A comprehensive understanding of their current content landscape to identify opportunities for improvement. The audit served as the foundation for our content strategy, revealing content gaps and areas needing updates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 competitor-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Discover</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Competitor<br>Analysis</br></b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20"> The competitor analysis delved deep into direct and indirect competitors. It revealed that several competitors shared similar value propositions and faced comparable challenges in terms of engagement and brand loyalty.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image - competitor -->
+    {{ z_image('./assets/images/R/R_compet.png') }}
+
+    <!-- 40-60 benchmark-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Discover<h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Benchmark</br></b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <p class="mb-20">During the benchmark analysis, I thoroughly examined the websites and online presence of similar businesses in the TCG and board game niche. By scrutinizing strategies, content quality, and engagement levels, I aimed to identify key areas for improvement and potential opportunities for Turn Zero Games.</p>
+                    
+                    <p class="mb-20">Through the competitive benchmark, I gained a comprehensive understanding of the gaming market's competitive landscape.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image - Swot -->
+    {{ z_image('./assets/images/R/R_SWOT.png') }}
+
+    <!-- 40-60 research-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Empathize</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>User<br>Research</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>In store interviews</b></h4>
+
+                    <p class="mb-20">To better understand the business and users, interviews were conducted with five customers at the store. The findings revealed that most users rely on word-of-mouth for news updates. The customers have been collecting games for several years, play competitively for destressing, and often come to the store and ask staff for information. Three out of five would read the blog if it were available, while one user does not use the internet and another gets content from platforms like YouTube.</p>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 40-60 persona-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Define</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>User<br>Persona</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b></b></h4>
+
+                    <p class="mb-20">Based on the user research, a  user persona was created. The persona represents someone living in LA, aged 25-40, who has been collecting games for several years. They play competitively for stress relief and seek a challenging yet safe environment to find local friends and strong players.</p>
+                
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- full image - user persona -->
+    {{ z_image('./assets/images/R/R_user.png') }}
+
+    <!-- 40-60 strategy-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Ideate</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Strategy<br>Blueprint</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    
+                    1. <b>Business goals</b>:<br>
+
+                    <ul>
+                        <li>Establish a competitive edge.</li>
+                        <li>Surge website and social media traffic.</li>
+                        <li>Cultivate a thriving online gaming community.</li>
+                    </ul>
+                
+                    2. <b>User goals</b>:<br>
+
+                    <ul>
+                        <li>Access real-time gaming updates.</li>
+                        <li>Simplify online topic exploration.</li>
+                    </ul>
+                    
+                    <br>
+                    
+                    <p class="mb-20">The business recommendation proposed was:</p>
+                    <ul>
+                        <li><b>Short term</b>: Set up a subdomain blog with categorized articles to enhance marketing content and SEO efforts.</li>
+                        <li><b>Long term</b>: Introduce a forum section on the blog for user-generated threads and discussions, complementing the existing Discord channel for community engagement.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 feature and content-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Ideate</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Feature and<br> Content </b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b></b></h4>
+
+                    <p class="mb-20">Given the painpoints of the users a feature list and content was created.</p>
+
+                    <p class="mb-20">The <b>feature</b> set encompasses organized headers spanning games, events, reviews, and FAQs. The homepage offers intuitive navigation and personalized product suggestions.</p> 
+                    
+                    <p class="mb-20">In terms of <b>content</b>, the blog promises interviews with avid players, detailed tournament reports, comprehensive game instructions, breaking release and pre-release news, explorations of rare cards, and enthralling histories specific to individual games and cards.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+                
+    <!-- 40-60 KPI-->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>KPIs</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b></b></h4>
+
+                    <p class="mb-20"><b>Key Performance Indicators</b> provide the compass for success, covering metrics like website traffic, conversion rates, social media engagement, newsletter sign-ups, and consultations scheduled.
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 sitemap-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Design</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Sitemap</b></h3>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- full image - sitemap -->
+    {{ z_image('./assets/images/R/R_sitemap.png') }}
+
+    <!-- 40-60 userflow-->
+    <!-- todo: CHANGE FONT dimension -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h5 class="mb-0" style="color:gray">Design</h5>
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Userflow</b></h3>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- full image - flow -->
+    {{ z_image('./assets/images/R/R_flow.png') }}
+
+    <!-- 40-60 text - branding -->
+    <!-- todo: change font -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Branding</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Name and tagline</b></h4>
+
+
+                    <p class="mb-20">"Re:turn" symbolizes a digital return for gaming enthusiasts.</p>
+
+                    <p class="mb-20">The tagline, "The place to recharge your health points," echoes its destressing and rejuvenating essence.</p>            
+            
+                    <h4><b>Tone</b></h4>
+
+                    <p class="mb-20">A warm, welcoming tone mimicking offline camaraderie with captivating and transparent content.</p>
+
+                    <h4><b>Typography and palette</b></h4>
+
+                    <p class="mb-20">The chosen design maintains congruency with the website colors. Fonts like Open Sans and Ruda convey cleanliness, readability, and friendliness.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image - brand -->
+    {{ z_image('./assets/images/R/R_brand.png') }}
+
+    <!-- 40-60 text - further step -->
+    <!-- todo: change font -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Further Steps</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>The road ahead</b></h4>
+
+                    <ul>
+                        <li>Implement a closed-loop system for continuous user feedback.</li>
+                        <li>Leverage KPI reports to refine strategies.</li>
+                        <li>Develop a content calendar for blog and social media.</li>    
+                        <li>Bolster website SEO through strategic keywords and tags.</li>    
+                    </ul>
+                        
+                <p class="mb-20">In the future it would be interesting to collaborate with competitors to see which store rules LA. This would to foster a healthy competitive spirit while building a sense of camaraderie within the local gaming community.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 40-60 text - wireframes homepage -->
+    <!-- todo: change font -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Wireframes</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Homepage</b></h4>
+                        
+                    <p class="mb-20">User are welcomed with a dynamic interface offers seamless navigation, popular articles, and personalized product recommendations. Eye-catching banners keep visitors intrigued.</p>
+                                       
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- full image - wireframe article-->
+    {{ z_image('./assets/images/R/R_wireframe1.png') }}
+
+    <!-- 40-60 text - wireframes -->
+    <!-- todo: change font -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b></b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>Article page</b></h4>
+                                                
+                    <p class="mb-20">Upon entering an article, users will find social media sharing integrated and vibrant comment sections foster a strong online community.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- full image - wireframe2 -->
+    {{ z_image('./assets/images/R/R_wireframe2.png') }}
+
+
+    <!-- 40-60 text - wireframes -->
+    <!-- todo: change font -->
+    <div class="container mt-20 mb-20">
+        <div class="pt-20 pb-20">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                    <h3 class="mb-20 mb-lg-0 pb-8 pb-lg-0"><b>Takeaways</b></h3>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                    <h4><b>An Holistic Approach</b></h4>
+                        
+                    <p class="mb-20">In this project, the success lies in its holistic approach, addressing not only the website's design and functionality but also the broader ecosystem, including social media presence and community engagement.</p>
+                    
+                    <h4><b>Reflection</b></h4>
+                    
+                    <p class="mb-20">Overall, this project highlights the importance of deep research, strategic thinking, and a user-centered approach in creating a website that not only meets the business's objectives but also resonates with its target audience.</p>
+
+                    <p class="mb-20">By addressing user needs and pain points while aligning with business goals, I tried to set the foundation for a successful online platform that can drive engagement, loyalty, and growth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page-navigation mt-160">
+        <a href="zee-um-detail.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
+        <a href="gallery.html" class="btn btn-light btn-circle btn-xs">all</a>
+        <a href="sara-dzida-detail.html" class="btn btn-clean">next<span class="d-none d-sm-inline"> project</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}
